@@ -21,7 +21,7 @@ describe('Testing de los controladores para actualizar posts', () => {
     })
     it('Deberia retornar [0], en caso de que el id que mandemos sea incorrecto', (done) => {
         
-        updatePost(19230140192470, {content: 'this is my updated content'})
+        updatePost(140192470, {content: 'this is my updated content'})
             .then(data => {
                 assert.equal(data[0], 0)
                 done()
